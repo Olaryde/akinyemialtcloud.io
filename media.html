@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT ME</title>
+    <style>
+        body {
+            font-family: Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        h1,
+        h2 {
+            color: yellowgreen;
+        }
+
+        footer {
+            position: relative; /* Changed to relative */
+            text-align: center;
+            margin-top: auto;
+            padding: 10px 0;
+            background-color: #333;
+            color: white;
+        }
+
+        /* Navbar styles */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="./index.html">Home</a>
+        <a href="./form.html">Form</a>
+        <a href="./table.html">Courses</a>
+    </nav>
+
+    <main>
+        <section id="About-me">
+            <h1>AKINTUNDE OLAIDE AKINYEMI</h1>
+            <p>ALT SCHOOL ID:ALT/SOE/024/1143</p>
+            <article>
+                <h2>Biography</h2>
+                <p>My name is AKINTUNDE OLAIDE AKINYEMI. I am an accountant with 15 years expert experience in Finance Area. I graduated from Oxford Brookes University London and hold a Masters in Accountancy from University of London.
+                </p>
+                <p>I have worked with AP Moller Maersk and currently working with TotalEnergies. I have several achievements which include Automation of Invoice processing, Upgrade of Financial statements to IFRS standards among others.</p>
+                <p>I started a course in Cloud Engineering with a passion for learning and a way of contributing to society.</p>
+            </article>
+        </section>
+
+        <section>
+            <picture style="position: relative; display: inline-block; border: 2px solid red; padding: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);">
+                <!-- Image for very large screens -->
+                <source srcset="Add-Your-Pic-500.jpg" media="(max-width: 800px)">
+                <!-- Image for medium screens -->
+                <source srcset="Add-Your-Pic-400.jpg" media="(max-width: 650px)">
+                <!-- Image for small screens -->
+                <source srcset="Add-Your-Pic-300.jpg" media="(max-width: 500px)">
+                <!-- Default/fallback image -->
+                <img src="/Add-Your-Pic.jpg" alt="AKINTUNDE Responsive Image">
+            </picture>
+
+            <h2>Video of Myself</h2>
+            <video controls autoplay loop muted preload="auto" crossorigin="anonymous" width="320" height="240"
+                style="border: 2px solid red; padding: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);">
+                <source src="/Add-Your-Video.mp4" type="video/mp4">
+                <source src="Add-Your-Video.webm" type="video/webm">
+                <source src="Add-Your-Video.ogv" type="video/ogg">
+                <source src="Add-Your-Video.mov" type="video/mov">
+                <source src="Add-Your-Video.wmv" type="video/mnv">
+                Your browser does not support the video tag.
+            </video>
+
+            <h2>Audio of Myself</h2>
+            <audio controls autoplay loop muted preload="auto" crossorigin="anonymous"
+                style="border: 2px solid red; padding: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);">
+                <source src="/Add-Your-Audio.mp3" type="audio/mp3">
+                <source src="Add-Your-Audio.ogg" type="audio/ogg">
+                <source src="Add-Your-Audio.avi" type="audio/avi">
+                <source src="Add-Your-Audio.flv" type="audio/flv">
+                <source src="Add-Your-Audio.mkv" type="audio/mkv">
+                <source src="Add-Your-Audio.mpeg" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <p style="margin: 10px 0;">&copy; 2024 AKINTUNDE OLAIDE AKINYEMI. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
